@@ -1,0 +1,22 @@
+{
+  "name": "admin",
+  "description": "",
+  "main": "index.js",
+  "authors": [],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.7",
+    "jquery.sparkline": "^2.1.2",
+    "plotly.js": "^1.24.2",
+    "cubism": "^1.6.0"
+  }
+}

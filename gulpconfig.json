@@ -1,0 +1,67 @@
+{
+  "paths": {
+    "input": "./src/",
+    "output": "./public/assets/dist/",
+    "js": {
+      "input": "js/**/*.js",
+      "output": "js/"
+    },
+    "sass": {
+      "input": "sass/**/*.scss",
+      "output": "css/"
+    },
+    "html": {
+      "input": "html/**/*.html",
+      "output": "html/"
+    }
+  },
+  "server": {
+    "port": "3000",
+    "root": "./public/"
+  },
+  "sass": {
+    "outputStyle": "compressed"
+  },
+  "htmlmin": {
+    "collapseWhitespace": true
+  },
+  "spacingClasses": {
+    "important": true,
+    "directions": [
+      "",
+      "top",
+      "left",
+      "right",
+      "bottom"
+    ],
+    "sizes": [
+      5,
+      10,
+      20,
+      40,
+      60,
+      80
+    ],
+    "screens": {
+      "xs": null,
+      "sm": 768,
+      "md": 992,
+      "lg": 1200
+    },
+    "types": [
+      {
+        "key": "pad",
+        "cssType": "padding"
+      },
+      {
+        "key": "marg",
+        "cssType": "margin"
+      },
+      {
+        "key": "marg",
+        "cssType": "margin",
+        "inverse": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+a {
+  color: #00AEEF;
+  font-weight: 600;
+
+  &:focus,
+  &:hover {
+    color: #009AD4;
+    text-decoration: none;
+  }
+}

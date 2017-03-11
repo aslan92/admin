@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// $colors: (
+//   'light-blue': #4EA5EF, // rgba(78, 165, 239, 1)
+//   'darker-blue': #2B87D8, // rgba(43, 135, 216, 1)
+//   'tomato': #E85064, // rgba(232, 800, 100, 1)
+//   'green': #25C199, // rgba(37, 193, 153, 1)
+//   'yellow': #EBC243, // rgba(235, 194, 67, 1)
+//   'pale-grey': #F6F5FA, // rgba(246, 245, 250, 1)
+//   'blueish-grey': #E9EDF5, // rgba(233, 237, 245, 1)
+//   'gray': #D6D6D6, // rgba(214, 214, 214, 1)
+//   'darker-grey': #999, // rgba(0, 0, 0, 0.4)
+//   'blue-marina': #444C63, // rgba(68, 76, 99, 1)
+// );
+
+$colors: (
+  'chalk-blue': #D3E4FB,
+  'chalk-green': #EFFDEC,
+  'chalk-pink': #FFCCD0,
+  'chalk-yellow': #FEE0BA,
+  'tifanny-blue': #6BD9D7,
+  'grey-dark': #354052,
+  'grey-light': #919FAB,
+);
+
+$breakpoints: (
+  'small': (min-width: 768px),
+  'medium': (min-width: 992px),
+  'large': (min-width: 1200px),
+);
+
+/// Z-indexes map, gathering all Z layers of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Layer’s name
+/// @prop {Number} value - Z value mapped to the key
+$z-indexes: (
+  'modal': 5000,
+  'dropdown': 4000,
+  'default': 1,
+  'below': -1,
+);

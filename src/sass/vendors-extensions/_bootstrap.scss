@@ -1,0 +1,61 @@
+// .form-control {
+//   height: 36px;
+//   color: #354052;
+//   font-weight: 600;
+//   border-color: #DFE3E9;
+//   box-shadow: none;
+
+//   &:focus {
+//     border-color: #8C98A9;
+//     box-shadow: none;
+//   }
+
+//   /* Chrome/Opera/Safari */
+//   &::-webkit-input-placeholder { opacity: 0.5; }
+
+//   /* Firefox 19+ */
+//   &::-moz-placeholder { opacity: 0.5; }
+
+//    /* IE 10+ */
+//   &:-ms-input-placeholder { opacity: 0.5;  }
+// }
+
+// .has-success {
+//   .form-control,
+//   .form-control:focus {
+//     border-color: #1BB934;
+//     box-shadow: none;
+//   }
+
+//   // Set validation states also for addons
+//   .input-group-addon {
+//     color: #1BB934;
+//     border-color: #1BB934;
+//     background-color: lighten(#1BB934, 50%);
+//   }
+
+//   // Optional feedback icon
+//   .form-control-feedback {
+//     color: #1BB934;
+//   }
+// }
+
+// .has-error {
+//   .form-control,
+//   .form-control:focus {
+//     border-color: #ED1C24;
+//     box-shadow: none;
+//   }
+
+//   // Set validation states also for addons
+//   .input-group-addon {
+//     color: #ED1C24;
+//     border-color: #ED1C24;
+//     background-color: lighten(#ED1C24, 50%);
+//   }
+
+//   // Optional feedback icon
+//   .form-control-feedback {
+//     color: #ED1C24;
+//   }
+// }
