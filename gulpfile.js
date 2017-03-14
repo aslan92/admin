@@ -25,12 +25,35 @@ var path = require('path');
  */
 var config = require('./gulpconfig');
 
-Object.keys(config.paths).forEach(function (key) {
-  if (['input', 'output'].indexOf(key) < 0) {
-    config.paths[key] = {
-      input: path.join(config.paths.input, config.paths[key].input),
-      output: path.join(config.paths.output, config.paths[key].output)
-    };
+function isPlainObject(obj) {
+  // Basic check for Type object that's not null
+  if (typeof obj === 'object' && obj !== null) {
+    // If Object.getPrototypeOf supported, use it
+    if (typeof Object.getPrototypeOf === 'function') {
+      var proto = Object.getPrototypeOf(obj);
+      return (proto === Object.prototype || proto === null);
+    }
+
+    // Otherwise, use internal class
+    // This should be reliable as if getPrototypeOf not supported, is pre-ES5
+    return (Object.prototype.toString.call(obj) === '[object Object]');
+  }
+
+  // Not an object
+  return false;
+}
+
+var configPathKeys = Object.keys(config.paths);
+configPathKeys.forEach(function (key) {
+  if (/*ignoredKeys*/['input', 'output'].indexOf(key) < 0) {
+    if (isPlainObject(config.paths[key])) {
+      if (config.paths[key].input) {
+        config.paths[key].input = path.join(config.paths.input, config.paths[key].input);
+      }
+      if (config.paths[key].output) {
+        config.paths[key].output = path.join(config.paths.output, config.paths[key].output);
+      }
+    }
   }
 });
 

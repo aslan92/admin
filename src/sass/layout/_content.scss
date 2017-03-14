@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
+// This file contains all styles related to the content of the site/application.
 // -----------------------------------------------------------------------------
+
+.app-content {
+  min-height: 100%;
+  margin-left: 240px;
+  padding: 20px;
+}

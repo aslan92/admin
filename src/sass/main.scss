@@ -22,7 +22,8 @@
 // 4. Layout-related sections
 @import
   'layout/app',
-  'layout/sidebar';
+  'layout/sidebar',
+  'layout/content';
 
 // 5. Components
 @import
@@ -34,4 +35,4 @@
 
 // 7. Themes
 @import
-  'themes/theme';
+  'themes/default';
